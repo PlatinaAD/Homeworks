@@ -1,0 +1,101 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    border: 5px solid black;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: rosybrown;
+}
+
+.info {
+    height: 90%;
+    width: 90%;
+    border: 5px dotted red;
+    background-image: url("./images/wp5437792.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 3fr 3fr;
+    color: white;
+    border-radius: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 1;
+}
+
+.two {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.three {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+.first {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: red;
+}
+
+.second {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.third {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.fourth {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.fifth {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.six {
+    grid-column-start: 3;
+    grid-column-end: 2;
+}
+
+.seven {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.eight {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: royalblue;
+}
