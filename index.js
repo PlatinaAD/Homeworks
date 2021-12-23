@@ -1,0 +1,29 @@
+const body = document.querySelector('body');
+const users = [
+  {
+    name: 'Ivan',
+    age: 26
+  },
+  {
+    name: 'Ira',
+    age: 20
+  },
+  {
+    name: 'Sasha',
+    age: 30
+  },
+];
+
+users.forEach(({name, age}, index) => {
+  const p = document.createElement('p');
+
+  p.innerText = `Name ${name}, age ${age}.`;
+
+  p.onclick = () => {
+    const usInd = users[index];
+    users.filter(item => item !== usInd);
+    p.remove(users);
+  }
+
+  body.appendChild(p);
+});
